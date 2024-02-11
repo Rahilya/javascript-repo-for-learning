@@ -24,9 +24,9 @@ const hundreds = 1000000
 // console.log(Math.min(4, 3, 6, 8));
 // console.log(Math.max(4, 3, 6, 8));
 
-console.log(Math.random());
-console.log((Math.random()*10) + 1);
-console.log(Math.floor(Math.random()*10) + 1);
+console.log(Math.random());  // Always fives random values between 0 and 1;
+console.log((Math.random()*10) + 1);    //
+console.log(Math.floor(Math.random()*10) + 1);  //Math.floor wraps the number in lower possible value eg. 7.88777 +> 7
 
 const min = 10
 const max = 20
