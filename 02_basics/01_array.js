@@ -34,6 +34,7 @@ console.log(myn1);
 console.log("B ", myArr);
 
 
-const myn2 = myArr.splice(1, 3)
-console.log("C ", myArr);
+//const myArr = [0, 1, 2, 3, 4, 5]
+const myn2 = myArr.splice(1, 3)         //affects the original array and override it. This will result in [1,2,3]
+console.log("C ", myArr);           // Original array affected [0, 4, 5]
 console.log(myn2);
