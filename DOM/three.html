@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+
+<body style="background-color: black;">
+
+</body>
+<script>
+    const div = document.createElement('div')   //creates element
+    console.log(div);
+    div.className = "main"                      // give class name to the element
+    div.id = Math.round(Math.random() * 10 + 1) // gives an ID to the element
+    div.setAttribute("title", "genrated title") // set's attribute to an element
+    div.style.backgroundColor = "green"         // give style to the element
+    div.style.padding = "12px"
+
+    const addText = document.createTextNode("Chai aur code") // ceates text node (also we can achive this using <.innerText>)
+    div.appendChild(addText)     // added an element inside other element               
+
+
+    document.body.appendChild(div)  //added an element inside the html body
+
+    const h1 = document.createElement('h1')
+    console.log(h1);
+    h1.className = "chaiHead"
+    h1.setAttribute('title', "attTitle")
+    h1.style.backgroundColor = 'pink'
+    h1.style.color = 'navy'
+    h1.style.padding = '12px'
+    const addTextH1 = document.createTextNode("Chai aur heading")
+    h1.appendChild(addTextH1)
+    document.body.appendChild(h1)
+
+    const button = document.createElement('button')
+    console.log(button);
+    // button.innerText = "submit"
+    const btnText = document.createTextNode("Submit")
+    button.appendChild(btnText)
+    button.style.padding = '9px'
+    button.style.backgroundColor = 'teal'
+    button.style.color = 'wheat'
+    button.setAttribute('name', 'btn1')
+
+    document.body.appendChild(button)
+</script>
+
+</html>

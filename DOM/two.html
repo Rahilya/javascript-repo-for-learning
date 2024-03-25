@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: whitesmoke;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);               // gives children node inside an element // The NodeList is an array-like object, not an array object.
+    // console.log(parent.children[0]);            // gives specific child node inside parent node using []
+    // console.log(parent.children[1].innerHTML); // gives text or inner Html inside of child node
+    for (let i = 0; i < parent.children.length; i++) {
+        const element1 = parent.children[i].innerHTML;
+        const li = document.createElement('li')
+        li.textContent = element1
+        document.body.appendChild(li)
+        console.log(element1);
+
+    }
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    //console.log(dayOne);
+    //console.log(dayOne.parentElement);
+    //console.log(dayOne.nextElementSibling); // selects second element after the self which is its sibling
+
+    // console.log("NODES: ", parent.childNodes);
+</script>
+
+</html>
